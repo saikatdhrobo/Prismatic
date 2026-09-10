@@ -172,4 +172,11 @@ Local-first only — no auth, billing, or data upload. Keep every visible contro
 
 ---
 
+## Contributors
+
+- **Jakaria Saikat Dhrobo** — owner ([@saikatdhrobo](https://github.com/saikatdhrobo))
+- **Arena AI Agent (Prismatic Builder)** — principal frontend engineer, product designer & QA who built the complete application (see [`CONTRIBUTORS.md`](CONTRIBUTORS.md)).
+
+---
+
 Made with Vite + React + TypeScript (strict) + Tailwind + Radix + TanStack Table/Virtual + ECharts (modular) + Zustand + Zod + Dexie + Papa Parse + date-fns + Lucide.

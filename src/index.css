@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 240 10% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 12%;
+    --primary: 239 84% 67%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 6% 93%;
+    --secondary-foreground: 240 6% 18%;
+    --muted: 40 12% 94%;
+    --muted-foreground: 240 4% 46%;
+    --accent: 240 6% 95%;
+    --accent-foreground: 240 6% 18%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 239 84% 67%;
+    --radius: 0.625rem;
+    --chart-1: 239 84% 67%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 43 74% 66%;
+    --chart-4: 27 86% 67%;
+    --chart-5: 199 89% 48%;
+    --chart-6: 280 65% 60%;
+    --positive: 173 58% 39%;
+    --negative: 0 72% 51%;
+  }
+  .dark {
+    --background: 240 8% 9%;
+    --foreground: 0 0% 96%;
+    --card: 240 6% 12%;
+    --card-foreground: 0 0% 96%;
+    --popover: 240 6% 12%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 239 84% 67%;
+    --primary-foreground: 240 6% 12%;
+    --secondary: 240 6% 18%;
+    --secondary-foreground: 0 0% 96%;
+    --muted: 240 6% 16%;
+    --muted-foreground: 240 5% 64%;
+    --accent: 240 6% 18%;
+    --accent-foreground: 0 0% 96%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 6% 20%;
+    --input: 240 6% 20%;
+    --ring: 239 84% 67%;
+    --chart-1: 239 84% 67%;
+    --chart-2: 173 58% 45%;
+    --chart-3: 43 74% 66%;
+    --chart-4: 27 86% 67%;
+    --chart-5: 199 89% 48%;
+    --chart-6: 280 65% 65%;
+    --positive: 173 58% 45%;
+    --negative: 0 72% 58%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground antialiased; font-feature-settings: "tnum" 1, "ss01" 1; }
+  html { scrollbar-gutter: stable; }
+}
+
+/* tabular numerals for metrics */
+.tabular-nums { font-variant-numeric: tabular-nums; }
+
+/* custom scrollbar */
+* { scrollbar-width: thin; scrollbar-color: hsl(var(--border)) transparent; }
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 999px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
